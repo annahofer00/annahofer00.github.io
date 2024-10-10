@@ -16,7 +16,7 @@
         </div>
         <div style ="margin-top: 0;" class="content-container">
             <div>
-                <p>I am a Ph.D. student at Otto-von-Guericke-Universität Magdeburg in the group of <a href="https://www.thomas-kahle.de">Thomas Kahle</a>. My research interests lie in commutative algebra, in particular combinatorial and computational commutative algebra.
+                <p>I am a Ph.D. student at <a href="https://ovgu.de">Otto-von-Guericke-Universität Magdeburg</a> in the group of <a href="https://www.thomas-kahle.de">Thomas Kahle</a>. My research interests lie in commutative algebra, in particular combinatorial and computational commutative algebra.
                     My Ph.D. project is part of <a href="https://www.combinatorial-synergies.de">Combinatorial Synergies</a>.</p>
                 <p>I got both my Bachelor's and Master's degree at OvGU under supervision of Thomas Kahle. </p>
                 <p>Other than maths, I love running, climbing and swimming. Currently I am training for a trail marathon next year.
@@ -35,6 +35,26 @@
             </ul>
             </div>
         </div>
+        <div class="content-container">
+            <button class="toggle-btn" id="toggleButton">Dark</button>
+
+        </div>
+    <script>
+        const toggleButton = document.getElementById('toggleButton');
+        const body = document.body;
+
+        toggleButton.addEventListener('click', function() {
+            // Toggle the dark-mode class on the body
+            body.classList.toggle('dark-mode');
+
+            // Change button text based on mode
+            if (body.classList.contains('dark-mode')) {
+                toggleButton.textContent = 'Light';
+            } else {
+                toggleButton.textContent = 'Dark';
+            }
+        });
+    </script>
     </main>
 
     <footer>
