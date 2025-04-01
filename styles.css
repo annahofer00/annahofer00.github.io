@@ -1,3 +1,7 @@
+/* nice colours */
+.bettergreen { color: rgb(0, 128, 43); }
+.niceorange { color: rgb(204,102,0); }
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;

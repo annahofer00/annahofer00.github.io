@@ -12,7 +12,7 @@
 <body>
     <main>
         <div class="content-container">
-            <h1 style="color: #5e9265; margin-bottom: 0; margin-top: 20px;">Anna Hofer</h1>
+            <h1 class = "bettergreen" margin-bottom: 0; margin-top: 20px;">Anna Hofer</h1>
         </div>
         <div style ="margin-top: 0;" class="content-container">
             <div>
@@ -24,31 +24,35 @@
                     I also like learning languages and reading.</p>
                 <!-- <p>Click <a href="">here</a> for a short cv.</p> -->
             </div>
-            <img class="responsive-image" src="IMG_5565_small.jpeg" alt="an image of myself" maxwidth = 100% width="280" height="280">
+            <img class="responsive-image" src="images/IMG_5565_small.jpeg" alt="an image of myself" maxwidth = 100% width="280" height="280">
         </div>
         <div class="content-container">
             <div>
-                <h3 style="color: #5e9265;">Upcoming activities</h3>
+                <h3 class = "bettergreen">Upcoming activities</h3>
                 <ul>
-                    <li>19-21 March: <em>Combinatorial Synergies East</em>, MPI Leipzig</li>
-                    <li>24-28 March: <em>Algebraic Statistics 2025</em>, Munich</li>
+                    <li>26-30 May 2025: <em>Workshop on the Applications of Commutative Algebra</em>, The Fields Institute Toronto</li>
+                    <li>June 2025: SLMath Summer School: New perspectives on discriminants and their applications, MPI Leipzig</li>
                 </ul>
             </div>
         </div>
         <div class="content-container">
         <div>
-            <h3 style="color: #5e9265;">Past activities</h3>
+            <h3 class = "bettergreen">Past activities</h3>
             <ul>
+                <li>24-28 March 2025: <em>Algebraic Statistics 2025</em>, Munich</li>
+                <li>19-21 March 2025: <span class = "niceorange">I gave a talk at <em>Combinatorial Synergies East</em></span>, MPI Leipzig</li>
                 <li>11-13 September 2024: <em>Kick-Off Combinatorial synergies</em>, Osnabrück</li>
                 <li>13-14 December 2022: <em>Macaulay2 Bootcamp</em>, MPI Leipzig</li>
                 <li>13-15 June 2022: <em>75+80=155 years of commutative algebra</em> - Summerschool, Osnabrück</li>
             </ul>
         </div>
+        <!-- <img id="SPPlogo" class="responsive-image" src="images/BWM-farbig-typo-schwarz.png" alt="Combinatorial Synergies logo" maxwidth = 100% width="280" height="280"/> -->
         </div>
         <button class="toggle-btn" id="toggleButton">Dark</button>
     <script>
         const toggleButton = document.getElementById('toggleButton');
         const body = document.body;
+        const SPPlogo = document.getElementById('SPPlogo');
 
         toggleButton.addEventListener('click', function() {
             // Toggle the dark-mode class on the body
@@ -57,8 +61,10 @@
             // Change button text based on mode
             if (body.classList.contains('dark-mode')) {
                 toggleButton.textContent = 'Light';
+                SPPlogo.scr = "images/BWM-farbig-typo-weiss.png";
             } else {
                 toggleButton.textContent = 'Dark';
+                SPPlogo.scr = "images/BWM-farbig-typo-schwarz.png";
             }
         });
     </script>
