@@ -75,9 +75,9 @@ footer {
 
 
 .container {
-    height: 100%;              /* Ensure the container fills the footer height */
+    height: auto;              /* Ensure the container fills the footer height */
     margin: auto;              /* Center horizontally */
-    display: flex;             /* Enable Flexbox */
+    /* display: flex;             Enable Flexbox */
     flex-direction: column;    /* Stack the <p> elements vertically */
     justify-content: center;   /* Center vertically */
     align-items: center; 
@@ -120,4 +120,16 @@ li {
         margin-bottom: 0; /* Remove the bottom margin */
     }
 
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center; /* or flex-start / flex-end */
+  gap: 20px; /* space between icons */
+  padding-bottom: 5px;
+  padding-top: 0;}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
 }
