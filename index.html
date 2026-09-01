@@ -1,148 +1,349 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Anna Hofer</title>
-    <meta name="description" content="Anna Hofer — Ph.D. researcher in computational and combinatorial algebra, developing algorithms and software for symbolic computation.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <meta
+      name="description"
+      content="Anna Hofer — Ph.D. researcher in computational and combinatorial algebra, developing algorithms and software for symbolic computation."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
-    <button class="toggle-btn" id="toggleButton" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
+  <body>
+    <button
+      class="toggle-btn"
+      id="toggleButton"
+      aria-label="Toggle dark mode"
+      title="Toggle dark mode"
+    >
+      🌙
+    </button>
 
     <main>
-        <!-- ============================ Hero ============================ -->
-        <header class="hero">
-            <div class="hero-text">
-                <h1>Anna Hofer</h1>
-                <p class="tagline">Ph.D. candidate in combinatorial and computational commutative algebra</p>
-                <p>My research lies at the intersection of combinatorics, commutative algebra, and computation,
-                    with a focus on developing algorithms and software for computations in commutative algebra.</p>
-                <div class="quick-links">
-                    <a class="btn btn-primary" href="https://github.com/annahofer00" target="_blank" rel="noopener">GitHub</a>
-                    <a class="btn" href="https://www.linkedin.com/in/anna-hofer-32a179178" target="_blank" rel="noopener">LinkedIn</a>
-                </div>
-            </div>
-            <img class="hero-photo" src="images/IMG_5565_small.jpeg" alt="Portrait of Anna Hofer">
-        </header>
-
-        <!-- ============================ About ============================ -->
-        <section class="section">
-            <h2 class="section-title"><span class="dot">●</span> About</h2>
-            <div class="card">
-                <p>I am a Ph.D. student at <a href="https://ovgu.de">Otto von Guericke University Magdeburg</a> in
-                    <a href="https://www.thomas-kahle.de">Thomas Kahle</a>'s research group, funded by the DFG priority
-                    program <a href="https://www.combinatorial-synergies.de">Combinatorial Synergies</a>. I obtained both
-                    my Bachelor's and Master's degrees at OvGU under the supervision of Thomas Kahle.</p>
-                <p>My research focuses on combinatorial and computational commutative algebra. In particular, I am
-                    interested in combinatorial structures that provide insight into algebraic objects, as well as in the
-                    development of algorithms and software for computations in commutative algebra.</p>
-                <p style="margin-bottom: 0;">Outside of maths, I love sport — especially running, cycling, swimming, and
-                    climbing. I also enjoy learning languages and reading.</p>
-            </div>
-        </section>
-
-        <!-- ====================== Software ====================== -->
-        <section class="section">
-            <h2 class="section-title"><span class="dot">●</span> Software</h2>
-            <div class="featured">
-                <p class="eyebrow">Open-source contribution</p>
-                <h3>Injective resolutions &amp; local cohomology in OSCAR</h3>
-                <p>I implemented the computation of injective resolutions and local cohomology over normal affine
-                    semigroup rings in <a href="https://www.oscar-system.org">OSCAR</a>, the Julia-based computer algebra
-                    system. The functionality is now part of OSCAR. Joint work
-                    with Thomas Kahle.</p>
-                <div class="tag-row">
-                    <span class="tag">Julia</span>
-                    <span class="tag">OSCAR</span>
-                </div>
-                <a class="btn btn-primary"
-                   href="https://docs.oscar-system.org/stable/Experimental/InjectiveResolutions/introduction/"
-                   target="_blank" rel="noopener">View documentation →</a>
-            </div>
-        </section>
-
-        <!-- ====================== Upcoming activities ====================== -->
-        <section class="section">
-            <h2 class="section-title"><span class="dot">●</span> Upcoming activities</h2>
-            <div class="card">
-                <ul class="list dates">
-                    <li><span class="date">13–17 Jul 2026</span> <span><span class="role">Software presentation</span> · <em>ISSAC 2026</em>, Oldenburg, Germany (<a href="papers/issac_2026.pdf" target="_blank" rel="noopener">extended abstract</a>)</span></li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- ======================== Past activities ======================== -->
-        <section class="section">
-            <h2 class="section-title"><span class="dot">●</span> Past activities</h2>
-            <div class="card">
-                    <ul class="list dates">
-                        <li><span class="date">4–8 May 2026</span> <span><span class="role">Co-organizer</span> · <em><a href="https://mathconf.eu/yrccs-2026/index.html">Young Researchers Conference on Combinatorial Synergies</a></em>, FU Berlin (with Matt Dupraz and Léo Mathis)</span></li>
-                        <li><span class="date">20–28 Mar 2026</span> <span><em>Combinatorial Coworkspace</em>, Kleinwalsertal, Austria</span></li>
-                        <li><span class="date">26–30 Jan 2026</span> <span><em>Algebraic Topology: Methods, Computation, and Science</em>, MPI Leipzig</span></li>
-                        <li><span class="date">23 Jun – 4 Jul 2025</span> <span><em>SLMath Summer School: New perspectives on discriminants and their applications</em>, MPI Leipzig</span></li>
-                        <li><span class="date">26–30 May 2025</span> <span><em>Workshop on the Applications of Commutative Algebra</em>, The Fields Institute, Toronto</span></li>
-                        <li><span class="date">24–28 Mar 2025</span> <span><em>Algebraic Statistics 2025</em>, Munich</span></li>
-                        <li><span class="date">19–21 Mar 2025</span> <span><span class="role">Talk</span> <span class="talk-title">(Computing Injective Resolutions and Local Cohomology)</span> · <em>Combinatorial Synergies East</em>, MPI Leipzig</span></li>
-                        <li><span class="date">11–13 Sep 2024</span> <span><em>Kick-Off Combinatorial Synergies</em>, Osnabrück</span></li>
-                        <li><span class="date">13–14 Dec 2022</span> <span><em>Macaulay2 Bootcamp</em>, MPI Leipzig</span></li>
-                        <li><span class="date">13–15 Jun 2022</span> <span><em>75+80=155 years of commutative algebra</em> — Summer school, Osnabrück</span></li>
-                    </ul>
-            </div>
-        </section>
-
-        <!-- ============================ SPP logo ============================ -->
-        <div class="spp">
-            <a href="https://www.combinatorial-synergies.de">
-                <img id="SPPlogo" src="images/BWM-farbig-typo-schwarz.png" alt="Combinatorial Synergies logo">
-            </a>
+      <!-- ============================ Hero ============================ -->
+      <header class="hero">
+        <div class="hero-text">
+          <h1>Anna Hofer</h1>
+          <p class="tagline">
+            Ph.D. candidate in combinatorial and computational commutative
+            algebra
+          </p>
+          <p>
+            My research lies at the intersection of combinatorics, commutative
+            algebra, and computation, with a focus on developing algorithms and
+            software for computations in commutative algebra.
+          </p>
+          <div class="quick-links">
+            <a
+              class="btn btn-primary"
+              href="https://github.com/annahofer00"
+              target="_blank"
+              rel="noopener"
+              >GitHub</a
+            >
+            <a
+              class="btn"
+              href="https://www.linkedin.com/in/anna-hofer-32a179178"
+              target="_blank"
+              rel="noopener"
+              >LinkedIn</a
+            >
+          </div>
         </div>
+        <img
+          class="hero-photo"
+          src="images/IMG_5565_small.jpeg"
+          alt="Portrait of Anna Hofer"
+        />
+      </header>
+
+      <!-- ============================ About ============================ -->
+      <section class="section">
+        <h2 class="section-title"><span class="dot">●</span> About</h2>
+        <div class="card">
+          <p>
+            I am a Ph.D. student at
+            <a href="https://ovgu.de">Otto von Guericke University Magdeburg</a>
+            in <a href="https://www.thomas-kahle.de">Thomas Kahle</a>'s research
+            group, funded by the DFG priority program
+            <a href="https://www.combinatorial-synergies.de"
+              >Combinatorial Synergies</a
+            >. I obtained both my Bachelor's and Master's degrees at OvGU under
+            the supervision of Thomas Kahle.
+          </p>
+          <p>
+            My research focuses on combinatorial and computational commutative
+            algebra. In particular, I am interested in combinatorial structures
+            that provide insight into algebraic objects, as well as in the
+            development of algorithms and software for computations in
+            commutative algebra.
+          </p>
+          <p style="margin-bottom: 0">
+            Outside of maths, I love sport — especially running, cycling,
+            swimming, and climbing. I also enjoy learning languages and reading.
+          </p>
+        </div>
+      </section>
+
+      <!-- ============================ Research ============================ -->
+      <section class="section">
+        <h2 class="section-title"><span class="dot">●</span> Research</h2>
+        <div class="card">
+          <ul class="pub-list">
+            <!-- To add a paper, copy one <li> block and edit the four fields:
+                         title, authors, arXiv ID (appears twice: in the href and the link text),
+                         and the label above the title (Preprint / Published / etc.).
+                         Delete the placeholder <li> below once the real entry is in. -->
+            <li>
+              <span class="pub-type">Preprint · 2026</span>
+              <span class="pub-title"
+                >Trinomial containment in polynomial ideals is undecidable</span
+              >
+              <span class="pub-authors"
+                >with Tobias Boege and Thomas Kahle</span
+              >
+              <div class="pub-links">
+                <a
+                  href="https://arxiv.org/abs/2608.31162v1"
+                  target="_blank"
+                  rel="noopener"
+                  >arXiv:2608.31162v1</a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ====================== Software ====================== -->
+      <section class="section">
+        <h2 class="section-title"><span class="dot">●</span> Software</h2>
+        <div class="featured">
+          <p class="eyebrow">Open-source contribution</p>
+          <h3>Injective resolutions &amp; local cohomology in OSCAR</h3>
+          <p>
+            I implemented the computation of injective resolutions and local
+            cohomology over normal affine semigroup rings in
+            <a href="https://www.oscar-system.org">OSCAR</a>, the Julia-based
+            computer algebra system. The functionality is now part of OSCAR.
+            Joint work with Thomas Kahle.
+          </p>
+          <div class="tag-row">
+            <span class="tag">Julia</span>
+            <span class="tag">OSCAR</span>
+          </div>
+          <a
+            class="btn btn-primary"
+            href="https://docs.oscar-system.org/stable/Experimental/InjectiveResolutions/introduction/"
+            target="_blank"
+            rel="noopener"
+            >View documentation →</a
+          >
+        </div>
+      </section>
+
+      <!-- ====================== Upcoming activities ====================== -->
+      <section class="section">
+        <h2 class="section-title">
+          <span class="dot">●</span> Upcoming activities
+        </h2>
+        <div class="card">
+          <ul class="list dates">
+            <li>
+              <span class="date">14–16 Sep 2026</span>
+              <span>
+                <span class="conf"
+                  ><a
+                    href="https://www.combinatorial-synergies.de/activities/2026-09_AnnualConference/"
+                    >SPP Annual Conference</a
+                  ></span
+                >, Frankfurt
+              </span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ======================== Past activities ======================== -->
+      <section class="section">
+        <h2 class="section-title">
+          <span class="dot">●</span> Past activities
+        </h2>
+        <div class="card">
+          <ul class="list dates">
+            <li>
+              <span class="date">13–17 Jul 2026</span>
+              <span
+                ><span class="role">Software presentation</span> ·
+                <span class="conf"
+                  ><a href="https://www.issac-conference.org/2026/"
+                    >ISSAC 2026</a
+                  ></span
+                >, Oldenburg (<a
+                  href="papers/issac_2026.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  >extended abstract</a
+                >)</span
+              >
+            </li>
+            <li>
+              <span class="date">4–8 May 2026</span>
+              <span
+                ><span class="role">Co-organizer</span> ·
+                <span class="conf"
+                  ><a href="https://mathconf.eu/yrccs-2026/index.html"
+                    >Young Researchers Conference on Combinatorial Synergies</a
+                  ></span
+                >, FU Berlin (with Matt Dupraz and Léo Mathis)</span
+              >
+            </li>
+            <li>
+              <span class="date">20–28 Mar 2026</span>
+              <span
+                ><span class="conf">Combinatorial Coworkspace</span>,
+                Kleinwalsertal, Austria</span
+              >
+            </li>
+            <li>
+              <span class="date">26–30 Jan 2026</span>
+              <span
+                ><span class="conf"
+                  >Algebraic Topology: Methods, Computation, and Science</span
+                >, MPI Leipzig</span
+              >
+            </li>
+            <li>
+              <span class="date">23 Jun – 4 Jul 2025</span>
+              <span
+                ><span class="conf"
+                  >SLMath Summer School: New perspectives on discriminants and
+                  their applications</span
+                >, MPI Leipzig</span
+              >
+            </li>
+            <li>
+              <span class="date">26–30 May 2025</span>
+              <span
+                ><span class="conf"
+                  >Workshop on the Applications of Commutative Algebra</span
+                >, The Fields Institute, Toronto</span
+              >
+            </li>
+            <li>
+              <span class="date">24–28 Mar 2025</span>
+              <span
+                ><span class="conf">Algebraic Statistics 2025</span>,
+                Munich</span
+              >
+            </li>
+            <li>
+              <span class="date">19–21 Mar 2025</span>
+              <span
+                ><span class="role">Talk</span>
+                <span class="talk-title"
+                  >(Computing Injective Resolutions and Local Cohomology)</span
+                >
+                · <span class="conf">Combinatorial Synergies East</span>, MPI
+                Leipzig</span
+              >
+            </li>
+            <li>
+              <span class="date">11–13 Sep 2024</span>
+              <span
+                ><span class="conf">Kick-Off Combinatorial Synergies</span>,
+                Osnabrück</span
+              >
+            </li>
+            <li>
+              <span class="date">13–14 Dec 2022</span>
+              <span
+                ><span class="conf">Macaulay2 Bootcamp</span>, MPI Leipzig</span
+              >
+            </li>
+            <li>
+              <span class="date">13–15 Jun 2022</span>
+              <span
+                ><span class="conf"
+                  >75+80=155 years of commutative algebra,</span
+                >
+                Osnabrück</span
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============================ SPP logo ============================ -->
+      <div class="spp">
+        <a href="https://www.combinatorial-synergies.de">
+          <img
+            id="SPPlogo"
+            src="images/BWM-farbig-typo-schwarz.png"
+            alt="Combinatorial Synergies logo"
+          />
+        </a>
+      </div>
     </main>
 
     <footer>
-        <p class="contact-email">anna.hofer at ovgu.de</p>
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/anna-hofer-32a179178" aria-label="LinkedIn" target="_blank" rel="noopener">
-                <img src="images/icons8-linkedin-50.png" alt="LinkedIn">
-            </a>
-            <a href="https://github.com/annahofer00" aria-label="GitHub" target="_blank" rel="noopener">
-                <img src="images/icons8-github-50.png" alt="GitHub">
-            </a>
-        </div>
-        <p class="copyright">© 2026 Anna Hofer</p>
+      <p class="contact-email">anna.hofer at ovgu.de</p>
+      <div class="social-icons">
+        <a
+          href="https://www.linkedin.com/in/anna-hofer-32a179178"
+          aria-label="LinkedIn"
+          target="_blank"
+          rel="noopener"
+        >
+          <img src="images/icons8-linkedin-50.png" alt="LinkedIn" />
+        </a>
+        <a
+          href="https://github.com/annahofer00"
+          aria-label="GitHub"
+          target="_blank"
+          rel="noopener"
+        >
+          <img src="images/icons8-github-50.png" alt="GitHub" />
+        </a>
+      </div>
+      <p class="copyright">© 2026 Anna Hofer</p>
     </footer>
 
     <script>
-        const toggleButton = document.getElementById('toggleButton');
-        const body = document.body;
-        const SPPlogo = document.getElementById('SPPlogo');
+      const toggleButton = document.getElementById("toggleButton");
+      const body = document.body;
+      const SPPlogo = document.getElementById("SPPlogo");
 
-        function applyTheme(isDark) {
-            body.classList.toggle('dark-mode', isDark);
-            toggleButton.textContent = isDark ? '☀' : '🌙';
-            SPPlogo.src = isDark
-                ? "images/BWM-farbig-typo-weiss.png"
-                : "images/BWM-farbig-typo-schwarz.png";
-        }
+      function applyTheme(isDark) {
+        body.classList.toggle("dark-mode", isDark);
+        toggleButton.textContent = isDark ? "☀" : "🌙";
+        SPPlogo.src = isDark
+          ? "images/BWM-farbig-typo-weiss.png"
+          : "images/BWM-farbig-typo-schwarz.png";
+      }
 
-        // 1. Determine initial theme from saved preference or system setting
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        const userTheme = localStorage.getItem('theme');
-        applyTheme(userTheme === 'dark' || (userTheme === null && prefersDark));
+      // 1. Determine initial theme from saved preference or system setting
+      const prefersDark = window.matchMedia(
+        "(prefers-color-scheme: dark)",
+      ).matches;
+      const userTheme = localStorage.getItem("theme");
+      applyTheme(userTheme === "dark" || (userTheme === null && prefersDark));
 
-        // 2. Toggle on click and remember the choice
-        toggleButton.addEventListener('click', function () {
-            const nowDark = !body.classList.contains('dark-mode');
-            applyTheme(nowDark);
-            localStorage.setItem('theme', nowDark ? 'dark' : 'light');
-        });
+      // 2. Toggle on click and remember the choice
+      toggleButton.addEventListener("click", function () {
+        const nowDark = !body.classList.contains("dark-mode");
+        applyTheme(nowDark);
+        localStorage.setItem("theme", nowDark ? "dark" : "light");
+      });
     </script>
-</body>
-
+  </body>
 </html>
